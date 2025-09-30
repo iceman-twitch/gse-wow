@@ -1,0 +1,10 @@
+function()
+    local usable, noMana = IsUsableSpell(45477)
+    if usable == false then
+        return false
+    end
+    if target.Debuff("Frost Fever").Down then
+        return true
+    end
+    return false
+end
