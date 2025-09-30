@@ -1,0 +1,10 @@
+function()
+    local usable, noMana = IsUsableSpell(45462)
+    if usable == false then
+        return false
+    end
+    if target.Debuff("Blood Plague").Down then
+        return true
+    end
+    return false
+end
