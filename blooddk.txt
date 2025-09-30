@@ -1,0 +1,6 @@
+#Block 1
+/cast [@target,harm,nodead] Icy Touch
+/cast [@target,harm,nodead] Plague Strike
+/cast [@target,harm,nodead] Death Strike
+/cast [@target,harm,nodead] Heart Strike
+/cast [@target,harm,nodead] Heart Strike
