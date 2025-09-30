@@ -1,0 +1,14 @@
+/run
+local debuffName = "Frost Fever"
+local found = false
+for i=1,40 do
+  local name, _, _, _, _, _, _, _, _, spellId = UnitDebuff("target", i)
+  if name == debuffName then
+    print(debuffName, "found on target. Spell ID:", spellId)
+    found = true
+    break
+  end
+end
+if not found then
+  print(debuffName, "not found on target.")
+end
