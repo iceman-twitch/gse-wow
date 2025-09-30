@@ -18,7 +18,7 @@ end
 function()
     local found = false
     if UnitExists("target") then for i=1,40 do local name=UnitDebuff("target",i) if name == "Frost Fever" then found = true end end end
-    if found == true then return true end
-    return false
+    if found == true then return false end
+    return true
 end
 
